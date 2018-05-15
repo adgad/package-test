@@ -1,0 +1,33 @@
+## Fresh install
+v6.0.0 of everything
+
+#Update patch version of n-express. npm install.
+No change - v6.0.0 of everything
+
+#Update patch version of n-express. npm update.
+No change - v6.0.0 of everything
+
+#Update patch version of n-express. npm ci.
+No change - v6.0.0 of everything
+
+#Update minor version of n-ui. npm install.
+No change - v6.0.0 of everything
+
+#Update minor version of n-ui. npm update.
+n-ui updated to v6.2.0
+n-express updated to v6.0.3
+
+#Update minor version of n-ui. npm ci.
+No change - v6.2.0 of n-ui, v6.0.3 of n-express
+
+#Update patch version of third-party-dep. Update in package.json. npm install.
+third-party-dep updated to 6.0.1
+
+#Update patch version of third-party-dep. Update in package.json. npm update.
+third-party-dep updated to 6.0.2
+n-ui updated to v6.3.0
+TODO: confirm changes to package.json
+
+#Update patch version of third-party-dep. Update in package.json. npm ci.
+No change to package-lock.json
+npm ci failed because package.json updated but lockfile not up to date.

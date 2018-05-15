@@ -1,0 +1,37 @@
+## Fresh install
+v3.0.0 of everything
+
+#Update patch version of n-express. npm install.
+Did not update n-express
+Everything still on 3.0.0
+
+
+#Update patch version of n-express. npm update.
+Did not update n-express
+Everything still on 3.0.0
+
+#Update patch version of n-express. npm ci.
+Did not work - needs package-lock
+
+#Update minor version of n-ui. npm install.
+Installed v3.1.0 of n-ui
+Installed v3.0.3 of n-express
+TODO: confirm no changes to package.json
+
+#Update minor version of n-ui. npm update.
+Installed v3.2.0 of n-ui
+TODO: confirm package.json updated
+
+#Update minor version of n-ui. npm ci.
+Did not work - needs package-lock
+
+
+#Update patch version of third-party-dep. Update in package.json. npm install.
+Updated to version v3.0.1
+
+#Update patch version of third-party-dep. Update in package.json. npm update.
+Updated to version v3.0.2
+TODO: confirm no package JSON changes
+
+#Update patch version of third-party-dep. Update in package.json. npm ci.
+Did not work - needs package-lock
