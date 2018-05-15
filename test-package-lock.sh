@@ -2,7 +2,7 @@
 cd my-app
 rm -rf node_modules
 rm -rf package-lock.json
-npm install
+npm install >> ../results/package-lock/1-output.txt
 cp package-lock.json ../results/package-lock/1-lock.json
 cp package.json ../results/package-lock/1-package.json
 npm ls >> ../results/package-lock/1-ls.txt
@@ -14,7 +14,8 @@ cd ../n-express
 npm version patch
 npm publish --access public
 cd ../my-app
-npm install
+npm install >> ../results/package-lock/2-output.txt
+
 cp package-lock.json ../results/package-lock/2-lock.json
 cp package.json ../results/package-lock/2-package.json
 npm ls >> ../results/package-lock/2-ls.txt
@@ -24,7 +25,8 @@ cd ../n-express
 npm version patch
 npm publish --access public
 cd ../my-app
-npm update
+npm update >> ../results/package-lock/3-output.txt
+
 cp package-lock.json ../results/package-lock/3-lock.json
 cp package.json ../results/package-lock/3-package.json
 npm ls >> ../results/package-lock/3-ls.txt
@@ -34,7 +36,8 @@ cd ../n-express
 npm version patch
 npm publish --access public
 cd ../my-app
-npm ci
+npm ci >> ../results/package-lock/4-output.txt
+
 cp package-lock.json ../results/package-lock/4-lock.json
 cp package.json ../results/package-lock/4-package.json
 npm ls >> ../results/package-lock/4-ls.txt
@@ -44,8 +47,10 @@ cd ../n-ui
 npm version minor
 npm publish --access public
 cd ../my-app
-npm install
-cp package-lock.json ../results/package-lock/5-lock.json
+npm install >> ../results/package-lock/5-output.txt
+
+cp package-lock.json ../results/package-lock/5-lock.json >> ../results/package-lock/5-output.txt
+
 cp package.json ../results/package-lock/5-package.json
 npm ls >> ../results/package-lock/5-ls.txt
 
@@ -54,7 +59,8 @@ cd ../n-ui
 npm version minor
 npm publish --access public
 cd ../my-app
-npm update
+npm update >> ../results/package-lock/6-output.txt
+
 cp package-lock.json ../results/package-lock/6-lock.json
 cp package.json ../results/package-lock/6-package.json
 npm ls >> ../results/package-lock/6-ls.txt
@@ -64,7 +70,8 @@ cd ../n-ui
 npm version minor
 npm publish --access public
 cd ../my-app
-npm ci
+npm ci >> ../results/package-lock/7-output.txt
+
 cp package-lock.json ../results/package-lock/7-lock.json
 cp package.json ../results/package-lock/7-package.json
 npm ls >> ../results/package-lock/7-ls.txt
@@ -75,7 +82,8 @@ npm version patch
 npm publish --access public
 cd ../my-app
 perl -i -pe 's/(third-party-dep\": \"\^\d+\.\d+\.)(\d+)/$1.($2 + 1)/e' package.json
-npm install
+npm install >> ../results/package-lock/8-output.txt
+
 cp package-lock.json ../results/package-lock/8-lock.json
 cp package.json ../results/package-lock/8-package.json
 npm ls >> ../results/package-lock/8-ls.txt
@@ -86,7 +94,8 @@ npm version patch
 npm publish --access public
 cd ../my-app
 perl -i -pe 's/(third-party-dep\": \"\^\d+\.\d+\.)(\d+)/$1.($2 + 1)/e' package.json
-npm update
+npm update >> ../results/package-lock/9-output.txt
+
 cp package-lock.json ../results/package-lock/9-lock.json
 cp package.json ../results/package-lock/9-package.json
 npm ls >> ../results/package-lock/9-ls.txt
@@ -97,8 +106,9 @@ npm version patch
 npm publish --access public
 cd ../my-app
 perl -i -pe 's/(third-party-dep\": \"\^\d+\.\d+\.)(\d+)/$1.($2 + 1)/e' package.json
-npm ci
-cp package-lock.json ../results/package-lock/9-lock.json
-cp package.json ../results/package-lock/9-package.json
-npm ls >> ../results/package-lock/9-ls.txt
+npm ci >> ../results/package-lock/9-output.txt
+
+cp package-lock.json ../results/package-lock/10-lock.json
+cp package.json ../results/package-lock/10-package.json
+npm ls >> ../results/package-lock/10-ls.txt
 
