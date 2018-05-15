@@ -1,6 +1,6 @@
 {
   "name": "@adgad/n-ui",
-  "version": "3.3.0",
+  "version": "5.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -9,7 +9,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@adgad/n-express": "^3.0.0",
-    "@adgad/third-party-subdep": "^3.0.0"
+    "@adgad/n-express": "^5.0.0",
+    "@adgad/third-party-subdep": "^5.0.0"
   }
 }
