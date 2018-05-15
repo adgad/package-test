@@ -28,3 +28,6 @@ npm publish --access public
 
 #go home
 cd ..
+
+rm -rf */package-lock.json
+rm -rf */npm-shrinkwrap.json
