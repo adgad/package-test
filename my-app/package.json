@@ -1,14 +1,14 @@
 {
   "name": "@adgad/my-app",
-  "version": "7.0.0",
+  "version": "8.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {
-    "@adgad/n-ui": "^7.2.0",
-    "@adgad/third-party-dep": "^7.0.3"
+    "@adgad/n-ui": "^8.0.0",
+    "@adgad/third-party-dep": "^8.0.0"
   },
   "author": "",
   "license": "ISC"
