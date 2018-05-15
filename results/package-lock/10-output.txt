@@ -1,0 +1,14 @@
+npm WARN prepare removing existing node_modules/ before installation
+npm ERR! cipm can only install packages when your package.json and package-lock.json or npm-shrinkwrap.json are in sync. Please update your lock file with `npm install` before continuing.
+npm ERR!
+npm ERR!
+npm ERR! Invalid: lock file's @adgad/third-party-dep@10.0.2 does not satisfy @adgad/third-party-dep@^10.0.3
+npm ERR!
+
+npm ERR! A complete log of this run can be found in:
+npm ERR!     /Users/arjun.gadhia/.npm/_logs/2018-05-15T15_25_38_383Z-debug.log
+npm ERR! missing: @adgad/third-party-dep@10.0.2, required by @adgad/my-app@10.0.0
+npm ERR! missing: @adgad/n-ui@10.3.0, required by @adgad/my-app@10.0.0
+npm ERR! extraneous: @adgad/third-party-dep@10.0.2 /Users/arjun.gadhia/Development/package-test/my-app/node_modules/@adgad/third-party-dep
+npm ERR! missing: @adgad/n-express@10.0.3, required by @adgad/n-ui@10.3.0
+npm ERR! missing: @adgad/third-party-subdep@10.0.0, required by @adgad/n-ui@10.3.0

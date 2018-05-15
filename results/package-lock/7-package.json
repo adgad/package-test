@@ -1,10 +1,14 @@
 {
-  "name": "@adgad/n-express",
-  "version": "10.0.3",
+  "name": "@adgad/my-app",
+  "version": "10.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "@adgad/n-ui": "^10.2.0",
+    "@adgad/third-party-dep": "^10.0.0"
   },
   "author": "",
   "license": "ISC"

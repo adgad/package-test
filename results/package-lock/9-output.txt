@@ -1,0 +1,8 @@
++ @adgad/third-party-dep@10.0.2
+updated 1 package in 1.786s
+[+] no known vulnerabilities found [4 packages audited]
+
++ @adgad/n-ui@10.3.0
+updated 1 package in 3.185s
+[+] no known vulnerabilities found [4 packages audited]
+
