@@ -1,0 +1,32 @@
+{
+  "name": "@adgad/my-app",
+  "version": "3.0.0",
+  "lockfileVersion": 1,
+  "requires": true,
+  "dependencies": {
+    "@adgad/n-express": {
+      "version": "3.0.3",
+      "resolved": "https://registry.npmjs.org/@adgad/n-express/-/n-express-3.0.3.tgz",
+      "integrity": "sha512-PL5IZufNYo0INySW1nqL7nL0gv8NHFA+7m7fNEFaGzeY4Iwn8sA2Nk3GkPkmPh9B5f1Cx54QnZn7Qp7IYhEMkA=="
+    },
+    "@adgad/n-ui": {
+      "version": "3.1.0",
+      "resolved": "https://registry.npmjs.org/@adgad/n-ui/-/n-ui-3.1.0.tgz",
+      "integrity": "sha512-rTH3Q0MGXc55kmroEc3A14Cf+ih6WUycj/XED98o3G0W3uOYY84Ki6EIv6Qnkx8jgMwjdIibvMBmzs9kygXwrQ==",
+      "requires": {
+        "@adgad/n-express": "^3.0.0",
+        "@adgad/third-party-subdep": "^3.0.0"
+      }
+    },
+    "@adgad/third-party-dep": {
+      "version": "3.0.0",
+      "resolved": "https://registry.npmjs.org/@adgad/third-party-dep/-/third-party-dep-3.0.0.tgz",
+      "integrity": "sha512-3hWU0q/9irVnE/m2bIdeuzXOzpZAaEEl83c5Ll/2Uq1aL7UYcrG3aRbni6OY0eYEnFdbtrjIGG3mPVB+TNjQJg=="
+    },
+    "@adgad/third-party-subdep": {
+      "version": "3.0.0",
+      "resolved": "https://registry.npmjs.org/@adgad/third-party-subdep/-/third-party-subdep-3.0.0.tgz",
+      "integrity": "sha512-uBXw//RJMe98a+9Ji99o7TgLkSTAYgy4qjrlq9da44R4F3Erc72LvTTvZe1XB1mVLJY0P3Webxsg/pSHbiS7zw=="
+    }
+  }
+}

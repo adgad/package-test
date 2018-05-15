@@ -16,13 +16,13 @@ npm publish --access public
 
 #major bump n-ui
 cd ../n-ui
-npx npm-check-updates -u
+npx npm-check-updates -u --no-package-lock
 npm version major
 npm publish --access public
 
 #major bump my-app
 cd ../my-app
-npx npm-check-updates -u
+npx npm-check-updates -u --no-package-lock
 npm version major
 npm publish --access public
 
