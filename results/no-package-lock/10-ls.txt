@@ -1,0 +1,4 @@
+@adgad/my-app@7.0.0 /Users/arjun.gadhia/Development/package-test/my-app
+├── UNMET DEPENDENCY @adgad/n-ui@^7.2.0
+└── UNMET DEPENDENCY @adgad/third-party-dep@^7.0.3
+

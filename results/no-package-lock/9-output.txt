@@ -1,0 +1,4 @@
++ @adgad/third-party-dep@7.0.2
+updated 1 package in 2.879s
+[+] no known vulnerabilities found [4 packages audited]
+

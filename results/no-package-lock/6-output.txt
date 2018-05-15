@@ -1,0 +1,4 @@
++ @adgad/n-ui@7.2.0
+updated 1 package in 3.227s
+[+] no known vulnerabilities found [4 packages audited]
+

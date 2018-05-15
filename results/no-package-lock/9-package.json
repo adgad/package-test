@@ -8,7 +8,7 @@
   },
   "dependencies": {
     "@adgad/n-ui": "^7.2.0",
-    "@adgad/third-party-dep": "^7.0.3"
+    "@adgad/third-party-dep": "^7.0.2"
   },
   "author": "",
   "license": "ISC"

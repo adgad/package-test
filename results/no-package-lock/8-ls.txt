@@ -1,0 +1,6 @@
+@adgad/my-app@7.0.0 /Users/arjun.gadhia/Development/package-test/my-app
+├─┬ @adgad/n-ui@7.3.0
+│ ├── @adgad/n-express@7.0.3
+│ └── @adgad/third-party-subdep@7.0.0
+└── @adgad/third-party-dep@7.0.1
+
