@@ -1,0 +1,24 @@
+v6.0.3
+npm notice
+npm notice 📦  @adgad/third-party-dep@6.0.3
+npm notice === Tarball Contents ===
+npm notice 218B package.json
+npm notice === Tarball Details ===
+npm notice name:          @adgad/third-party-dep
+npm notice version:       6.0.3
+npm notice package size:  254 B
+npm notice unpacked size: 218 B
+npm notice shasum:        eb50344b47ba6237cae6e8792f522b90beb0f1ba
+npm notice integrity:     sha512-fQu3qPNZjLRZ+[...]kPNz+Z8oV4kvQ==
+npm notice total files:   1
+npm notice
++ @adgad/third-party-dep@6.0.3
+npm WARN prepare removing existing node_modules/ before installation
+npm ERR! cipm can only install packages when your package.json and package-lock.json or npm-shrinkwrap.json are in sync. Please update your lock file with `npm install` before continuing.
+npm ERR!
+npm ERR!
+npm ERR! Invalid: lock file's @adgad/third-party-dep@6.0.2 does not satisfy @adgad/third-party-dep@^6.0.3
+npm ERR!
+
+npm ERR! A complete log of this run can be found in:
+npm ERR!     /Users/arjun.gadhia/.npm/_logs/2018-05-15T09_28_01_005Z-debug.log
