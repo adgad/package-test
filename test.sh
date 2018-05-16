@@ -34,14 +34,7 @@ npm ls >> ../results/no-package-lock/3-ls.txt
 
 
 #Update patch version of n-express. npm ci.
-cd ../n-express
-npm version patch
-npm publish --access public && sleep 10
-cd ../my-app
-npm ci --no-package-lock >> ../results/no-package-lock/4-output.txt
-npm shrinkwrap && mv npm-shrinkwrap.json ../results/no-package-lock/4-shrinkwrap.json
-cp package.json ../results/no-package-lock/4-package.json
-npm ls >> ../results/no-package-lock/4-ls.txt
+
 
 #Update minor version of n-ui. npm install.
 cd ../n-ui
@@ -64,14 +57,7 @@ cp package.json ../results/no-package-lock/6-package.json
 npm ls >> ../results/no-package-lock/6-ls.txt
 
 #Update minor version of n-ui. npm ci.
-cd ../n-ui
-npm version minor
-npm publish --access public && sleep 10
-cd ../my-app
-npm ci --no-package-lock >> ../results/no-package-lock/7-output.txt
-npm shrinkwrap && mv npm-shrinkwrap.json ../results/no-package-lock/7-shrinkwrap.json
-cp package.json ../results/no-package-lock/7-package.json
-npm ls >> ../results/no-package-lock/7-ls.txt
+
 
 #Update patch version of third-party-dep. Update in package.json. npm install.
 cd ../third-party-dep
@@ -96,13 +82,5 @@ cp package.json ../results/no-package-lock/9-package.json
 npm ls >> ../results/no-package-lock/9-ls.txt
 
 #Update patch version of third-party-dep. Update in package.json. npm ci.
-cd ../third-party-dep
-npm version patch
-npm publish --access public && sleep 10
-cd ../my-app
-perl -i -pe 's/(third-party-dep\": \"\^\d+\.\d+\.)(\d+)/$1.($2 + 1)/e' package.json
-npm ci --no-package-lock >> ../results/no-package-lock/10-output.txt
-npm shrinkwrap && mv npm-shrinkwrap.json ../results/no-package-lock/10-shrinkwrap.json
-cp package.json ../results/no-package-lock/10-package.json
-npm ls >> ../results/no-package-lock/10-ls.txt
+
 
