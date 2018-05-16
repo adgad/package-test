@@ -12,8 +12,7 @@ npm ls >> ../results/package-lock/1-ls.txt
 #Update patch version of n-express. npm install.
 cd ../n-express
 npm version patch
-npm publish --access public
-sleep 10
+npm publish --access public && sleep 10
 cd ../my-app
 npm install >> ../results/package-lock/2-output.txt
 
@@ -24,8 +23,7 @@ npm ls >> ../results/package-lock/2-ls.txt
 #Update patch version of n-express. npm update.
 cd ../n-express
 npm version patch
-npm publish --access public
-sleep 10
+npm publish --access public && sleep 10
 cd ../my-app
 npm update >> ../results/package-lock/3-output.txt
 
@@ -36,8 +34,7 @@ npm ls >> ../results/package-lock/3-ls.txt
 #Update patch version of n-express. npm ci.
 cd ../n-express
 npm version patch
-npm publish --access public
-sleep 10
+npm publish --access public && sleep 10
 cd ../my-app
 npm ci >> ../results/package-lock/4-output.txt
 
@@ -48,7 +45,7 @@ npm ls >> ../results/package-lock/4-ls.txt
 #Update minor version of n-ui. npm install.
 cd ../n-ui
 npm version minor
-npm publish --access public
+npm publish --access public && sleep 10
 cd ../my-app
 npm install >> ../results/package-lock/5-output.txt
 
@@ -60,8 +57,7 @@ npm ls >> ../results/package-lock/5-ls.txt
 #Update minor version of n-ui. npm update.
 cd ../n-ui
 npm version minor
-npm publish --access public
-sleep 10
+npm publish --access public && sleep 10
 cd ../my-app
 npm update >> ../results/package-lock/6-output.txt
 
@@ -72,8 +68,7 @@ npm ls >> ../results/package-lock/6-ls.txt
 #Update minor version of n-ui. npm ci.
 cd ../n-ui
 npm version minor
-npm publish --access public
-sleep 10
+npm publish --access public && sleep 10
 cd ../my-app
 npm ci >> ../results/package-lock/7-output.txt
 
@@ -84,10 +79,9 @@ npm ls >> ../results/package-lock/7-ls.txt
 #Update patch version of third-party-dep. Update in package.json. npm install.
 cd ../third-party-dep
 npm version patch
-npm publish --access public
+npm publish --access public && sleep 10
 cd ../my-app
 perl -i -pe 's/(third-party-dep\": \"\^\d+\.\d+\.)(\d+)/$1.($2 + 1)/e' package.json
-sleep 10
 npm install >> ../results/package-lock/8-output.txt
 
 cp package-lock.json ../results/package-lock/8-lock.json
@@ -97,10 +91,9 @@ npm ls >> ../results/package-lock/8-ls.txt
 #Update patch version of third-party-dep. Update in package.json. npm update.
 cd ../third-party-dep
 npm version patch
-npm publish --access public
+npm publish --access public && sleep 10
 cd ../my-app
 perl -i -pe 's/(third-party-dep\": \"\^\d+\.\d+\.)(\d+)/$1.($2 + 1)/e' package.json
-sleep 10
 npm update >> ../results/package-lock/9-output.txt
 
 cp package-lock.json ../results/package-lock/9-lock.json
@@ -110,10 +103,9 @@ npm ls >> ../results/package-lock/9-ls.txt
 #Update patch version of third-party-dep. Update in package.json. npm ci.
 cd ../third-party-dep
 npm version patch
-npm publish --access public
+npm publish --access public && sleep 10
 cd ../my-app
 perl -i -pe 's/(third-party-dep\": \"\^\d+\.\d+\.)(\d+)/$1.($2 + 1)/e' package.json
-sleep 10
 npm ci >> ../results/package-lock/9-output.txt
 
 cp package-lock.json ../results/package-lock/10-lock.json
